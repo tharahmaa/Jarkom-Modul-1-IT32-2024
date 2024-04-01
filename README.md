@@ -1,13 +1,12 @@
-# Laporan Resmi Praktikum Komunikasi Data dan Jaringan Komputer 
+## Laporan Resmi Praktikum Komunikasi Data dan Jaringan Komputer  
+### Modul 1 Kelompok IT-32
 
-## Modul 1 Kelompok IT-32
+**Anggota Kelompok IT-32:**
 
-
-**Anggota:**
-
-Atha Rahma Arianti - 5027221030
-
-Nur Azka Rahadiansyah - 5027221064
+| Nama                      | NRP        |
+|---------------------------|------------|
+|Atha Rahma Arianti         | 5027221030 |
+|Nur Azka Rahadiansyah      | 5027221064 |
 
 
 
@@ -150,7 +149,7 @@ atau juga bisa menggunakan Analyze -> follow -> tcp stream
 
 filter “FTP” 
 
-menggunakan Analyze -> follow -> tcp stream
+menggunakan Analyze --> follow --> tcp stream
 
 atau juga bisa mencari lewat filter tcp.stream eq 14 lalu menggunakan langkah yang sama dengan langkah 2
 
