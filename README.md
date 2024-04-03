@@ -1,5 +1,5 @@
-## Laporan Resmi Praktikum Komunikasi Data dan Jaringan Komputer  
-### Modul 1 Kelompok IT-32
+# Laporan Resmi Praktikum Komunikasi Data dan Jaringan Komputer  
+## Modul 1 Kelompok IT-32
 
 **Anggota Kelompok IT-32:**
 
@@ -10,7 +10,7 @@
 
 
 
-# **FUZZ:**
+## **FUZZ:**
 
 ![fuzz](fuzz.jpg)
 
@@ -44,7 +44,7 @@ Didapatkan user & password, sayangnya baru dapet pas waktunya dah abis :((((
 
 
 
-# **EVIDENCE:** 
+## **EVIDENCE:** 
 
 ![evidence](evidence.jpg)
 
@@ -77,7 +77,7 @@ Klik follow, didapatkan email `tareq@gmail.com` dan password `tareq@nanomate`
 
 
 
-# **ATM ATP OR FTP**
+## **ATM ATP OR FTP**
 
 ![atm atp ftp](atmatpftp.jpg)
 
@@ -94,7 +94,7 @@ Didapatkan password
 
 
 
-# **HOW MANY PACKAGES**
+## **HOW MANY PACKAGES**
 ![how many packages](howmanypackages.jpg)
 
 Untuk pengerjaan soal How Many Packages ini, klik `statistic` di bagian atas kiri, lalu klik `packet length`, gunakan filter `frame.len == 94` (soalnya percobaan login yg gagal ada di length 94)
@@ -107,7 +107,7 @@ Didapatkan angka 934
 
 
 
-# **TRACE HIM**
+## **TRACE HIM**
 ![trace him](tracehim.jpg)
 
 Di soal Trace Him ini menggunakan filter `ftp`. Dari situ dicari yang memiliki info `request`, tinggal dilihat saja IP sourcenya lalu didapatkan lah IP nya 10.30.3.4
@@ -118,31 +118,31 @@ Di soal Trace Him ini menggunakan filter `ftp`. Dari situ dicari yang memiliki i
 
 
 
-# **creds**
+## **creds**
 (File Name : evidence)
 ![creds](creds.jpg)
 
-filter “FTP” 
+filter `FTP` 
 pada bagian info terdapat user dan password yang dikirim oleh 10.30.3.1
-atau juga bisa menggunakan Analyze -> follow -> tcp stream
+atau juga bisa menggunakan `Analyze` -> `follow` -> `tcp stream`
 
 
 
 
-# **malwleowleo**
+## **malwleowleo**
 (File Name : evidence)
 ![malwleowleo](malwleowleo.jpg)
 
 
 
 
-filter “FTP” 
+filter `FTP`
 
-menggunakan Analyze --> follow --> tcp stream
+menggunakan `Analyze` --> `follow` --> `tcp stream`
 
-atau juga bisa mencari lewat filter tcp.stream eq 14 lalu menggunakan langkah yang sama dengan langkah 2
+atau juga bisa mencari lewat filter `tcp.stream eq 14` lalu menggunakan langkah yang sama dengan langkah 2
 
 
 
-## **Sekian Laporan Resmi Praktikum Komunikasi Data dan Jaringan Komputer Modul 1 dari Kelompok IT-32**
-# MATUR TENGKYU <3
+### **Sekian Laporan Resmi Praktikum Komunikasi Data dan Jaringan Komputer Modul 1 dari Kelompok IT-32**
+## MATUR TENGKYU <3
