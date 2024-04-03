@@ -14,7 +14,7 @@
 
 ![fuzz](fuzz.jpg)
 
-Di soal fuzz ini, menggunakan filter `http`. Dari situ dapat dicari info dari POST, maka akann mendapatkan IP address 
+Di soal fuzz ini, menggunakan filter `http`. Dari situ dapat dicari info dari POST, maka akan didapatkan IP address 
 
 ![fuzz1](fuzz1.png)
 
@@ -144,5 +144,5 @@ atau juga bisa mencari lewat filter tcp.stream eq 14 lalu menggunakan langkah ya
 
 
 
-# **Sekian Laporan Resmi Praktikum Komunikasi Data dan Jaringan Komputer dari Kelompok IT-32**
-## MATUR TENGKYU <3
+## **Sekian Laporan Resmi Praktikum Komunikasi Data dan Jaringan Komputer Modul 1 dari Kelompok IT-32**
+# MATUR TENGKYU <3
