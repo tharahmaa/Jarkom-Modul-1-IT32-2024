@@ -14,37 +14,31 @@
 
 ![fuzz](fuzz.jpg)
 
-filter http, cari info POST
-
-dapet info dapet info IP address 
+Di soal fuzz ini, menggunakan filter 'http'. Dari situ dapat dicari info dari POST, maka akann mendapatkan IP address 
 
 ![fuzz1](fuzz1.png)
 
-filter tcp
-dapet info port 80 
+Kemudian menggunakan filter 'tcp', dari situ terlihat jika port yang digunakan adalah port 80
 
 ![fuzz2](fuzz2.png)
 
-balik ke filter http, klik paling bawah yg 302 found, FOLLOW 
-
-
-dapet info endpoint / 
+Kembali ke filter 'http', scroll dan klik paling bawah yang ada tulisan '302 found', kemudian FOLLOW. Dari situ maka akan didapat endpoint '/' 
 
 ![fuzz3](fuzz3.png)
 
 
-dapet info toolname Fuzz Faster U Fool v2.0.0-dev, disingkat 
+Terlihat juga toolname yang digunakan adalah 'Fuzz Faster U Fool v2.0.0-dev', yang kemudian disingkat menjadi 'ffuf-v2.0.0-dev' pada jawaban 
 
 ![fuzz4](fuzz4.png)
 
 
-cari 302 found di bawah 
+Masukkan '302 found' pada kolom pencarian di bawah 
 
 ![fuzz5](fuzz5.png)
 
 ![fuzz6](fuzz6.png)
 
-dapet user & password, sayangnya baru dapet pas waktunya dah abis :((((
+Didapatkan user & password, sayangnya baru dapet pas waktunya dah abis :((((
 
 ![fuzzlast](fuzzlast.png)
 
@@ -54,33 +48,29 @@ dapet user & password, sayangnya baru dapet pas waktunya dah abis :((((
 
 ![evidence](evidence.jpg)
 
-filter http
-
-cari info POST
-
-follow 
+Di soal evidence ini, menggunakan filter 'http', cari saja random yang memiliki info POST didalamnya kemudian klik follow
 
 ![EVIDENCE1](EVIDENCE1.png)
 
-dapet info host nanomate-solutions.com 
+Didapatkan host 'nanomate-solutions.com' 
 
 ![EVIDENCE2](EVIDENCE2.png)
 
-dapet info server Apache/2.4.56 
+Didapatkan server 'Apache/2.4.56' 
 
 ![EVIDENCE3](EVIDENCE3.png)
 
-dapet info endpoint /app/includes/process_login.php 
+Didapatkan endpoint '/app/includes/process_login.php' 
 
 ![EVIDENCE4](EVIDENCE4.png)
 
-filter tcp.stream eq 1248 (asalnya cari dari frame.len == 714 soalnya percobaan login ada di situ semua, dah dibuka 1” invalid semua kecuali yg eq 1248 ini) 
+Kemudian menggunakan filter 'tcp.stream eq 1248' (asalnya cari dari 'frame.len == 714' dan beberapa packet length lainnya yang memiliki percobaan login, sudah dibuka satu persatu tetapi invalid semua kecuali yg eq 1248 ini) 
 
 ![EVIDENCE5](EVIDENCE5.png)
 
 ![EVIDENCE6](EVIDENCE6.png)
 
-follow, dapet info email tareq@gmail.com dan password tareq@nanomate 
+Klik follow, didapatkan email 'tareq@gmail.com' dan password 'tareq@nanomate' 
 
 ![EVIDENCE8](EVIDENCE8.png)
 
@@ -91,26 +81,25 @@ follow, dapet info email tareq@gmail.com dan password tareq@nanomate
 
 ![atm atp ftp](atmatpftp.jpg)
 
-filter “ftp”
+Pada soal ATM ATP or FTP ini digunakan filter 'ftp'. Dari situ cukup cari yang memiliki keterangan 'login successfull' atau memiliki kode 230
 
-cari login successfull (code=230) 
 
 ![atm atp ftp](atmatpftp0.png)
 
-follow
+Klik follow
 
 ![atm atp ftp](atmatpftp1.png)
 
-dapet password 
+Didapatkan password 
 
 
 
 # **HOW MANY PACKAGES**
 ![how many packages](howmanypackages.jpg)
 
-di bagian statistic, packet length, filter frame.len == 94 (soalnya percobaan login yg gagal ada di length 94)
+Untuk pengerjaan soal How Many Packages ini, klik 'statistic' di bagian atas kiri, lalu klik 'packet length', gunakan filter 'frame.len == 94' (soalnya percobaan login yg gagal ada di length 94)
 
-dapet angka 934 
+Didapatkan angka 934 
 
 ![how many packages](HOWMANYPACKAGES.png)
 
@@ -121,9 +110,9 @@ dapet angka 934
 # **TRACE HIM**
 ![trace him](tracehim.jpg)
 
-filter ftp
+Di soal Trace Him ini menggunakan filter 'ftp'. Dari situ dicari yang memiliki info 'request', tinggal dilihat saja IP sourcenya lalu didapatkan lah IP nya 10.30.3.4
 
-cari yg infonya request, berarti asalnya dari situ, IP nya 10.30.3.4 
+
 ![trace him](tracehim1.png)
 
 
