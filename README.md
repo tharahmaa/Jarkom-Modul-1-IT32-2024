@@ -123,6 +123,8 @@ Di soal Trace Him ini menggunakan filter `ftp`. Dari situ dicari yang memiliki i
 ![creds](creds.jpg)
 
 menggunakan filter `FTP` lalu didapatkan username `h3ngk3rTzy` dan password `S!l3ncE`
+
+
 ![creds_1](creds_1.png)
 pada bagian info terdapat user dan password yang dikirim oleh 10.30.3.1
 atau juga bisa menggunakan `Analyze` -> `follow` -> `tcp stream`
@@ -137,7 +139,7 @@ atau juga bisa menggunakan `Analyze` -> `follow` -> `tcp stream`
 filter `FTP`
 
 atau juga bisa mencari lewat filter `tcp.stream eq 14` lalu menggunakan tools yang ada pada `Analyze` --> `follow` --> `tcp stream`
-![malwleowleo_1](malwleowleo_1.jpg)
+![malwleowleo_1](malwleowleo_1.png)
 dan didapatkan dua file yaitu `mirza.jpg` dan `m4L1c10us_W4re.c`.
 
 
